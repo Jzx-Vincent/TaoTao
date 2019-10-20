@@ -1,0 +1,7 @@
+springmvc
+1.web.xml定义了前端控制器DispatcherServlet（负责接收请求，并将请求分发给对应的Handle，即实现Controller接口的Java类）拦截用户请求。
+
+2.如果需要用POST方式提交请求，定义包含表单数据的JSP页面。如果只是GET方式发送请求，无需此步。
+3.定义用户请求的Handle类，可以实现Controller接口或者使用@Controller注解。
+4.配置Handle。
+5.编写视图资源。当Handle处理用户请求结束后，通常返回一个ModelAndView对象，该对象包含返回的视图名或视图名和模型。
